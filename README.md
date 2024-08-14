@@ -41,8 +41,8 @@ Sending an alert reliably courtesy of [Wandalen/wretry.action](https://github.co
       token: ${{ secrets.GOALERT_INTEGRATION_TOKEN }}
       summary: 'Alert Summary'
       details: |
-	    Multiline
-	    Alert
-	    Details
+        Multiline
+        Alert
+        Details
       dedup: 'alert-dedup'
 ```
