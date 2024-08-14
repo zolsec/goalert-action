@@ -1,0 +1,23 @@
+{
+  "name": "goalert-action",
+  "version": "1.0.0",
+  "description": "A GitHub Action for sending alerts to GoAlert.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zolsec/goalert-action.git"
+  },
+  "author": "Zolsec Ltd",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/zolsec/goalert-action/issues"
+  },
+  "homepage": "https://github.com/zolsec/goalert-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "axios": "^1.7.4"
+  }
+}
