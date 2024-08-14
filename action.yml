@@ -1,0 +1,29 @@
+name: 'GoAlert Action'
+description: 'A GitHub Action to send alerts to the GoAlert API'
+inputs:
+  base_url:
+    description: 'The base URL of the GoAlert instance'
+    required: true
+  token:
+    description: 'The integration key to use for GoAlert'
+    required: true
+  summary:
+    description: 'Short description of the alert (max 1024 characters)'
+    required: true
+  details:
+    description: 'Additional information about the alert, supports markdown (max 6144 characters)'
+    required: false
+  action:
+    description: 'Action to take on the alert (e.g., close)'
+    required: false
+  dedup:
+    description: 'De-duplication string for the alert'
+    required: false
+
+runs:
+  using: 'node18'
+  main: 'index.js'
+
+branding:
+  icon: 'bell'
+  color: 'blue'
